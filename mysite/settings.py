@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'), 
+    os.path.join(BASE_DIR, 'staticfiles_build'),  
     # '/var/www/static/',
 ]
 MEDIA_URL = '/media/'
@@ -134,6 +134,8 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media_cdn')
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
+# \Users\com\Desktop\django-invoices-master
+STATIC_ROOT = 'Users\com\Desktop\django-invoices-master\staticfiles_build'
 
 # SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups' 
 
